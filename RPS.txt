@@ -1,0 +1,39 @@
+        # RPS Game Section
+
+        elif message.content == ">RPS":
+            await message.channel.send(f"""your...your challenging me? {message.author} are fine?""")
+            time.sleep(2)
+            await message.channel.send("Ok. But if you lose, don't cry.")
+            time.sleep(1)
+            RPSGP = "A"
+            await message.channel.send("You start. .R,.P,.S")
+            if message.content == ".R":
+                RPSGP == "R"
+            elif message.content == ".P":
+                RPSGP == "P"
+            elif message.content == ".S":
+                RPSGP == "R"
+            else:
+
+            RPSGB = random.randint(1,3)
+
+            if (RPSGB == 1):
+                await message.channel.send("Rock!")
+            elif (RPSGB == 2):
+                await message.channel.send("Paper!")
+            elif (RPSGB == 3):
+                await message.channel.send("Scissors!")
+
+            if (RPSGB == 1) and (RPSGP == "R"):
+                await message.channel.send("Draw? Ok. Let's try again")
+            elif (RPSGB == 2) and (RPSGP == "P"):
+                await message.channel.send("Draw? Ok. Let's try again")
+            elif (RPSGB == 3) and (RPSGP == "R"):
+                await message.channel.send("Draw? Ok. Let's try again")
+
+
+
+
+
+
+
